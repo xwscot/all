@@ -80,7 +80,6 @@ body {
     }
 }
 
-
 #av:hover {
     border-radius: 25%;
     transition: 3s;
@@ -142,7 +141,7 @@ body {
 
 .soc:hover {
     filter: none;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .img {

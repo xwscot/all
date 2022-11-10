@@ -14,7 +14,7 @@ body {
 
 #bgcontainer {
     position: relative;
-    background-color: #e2acff;
+    background-image: linear-gradient(to bottom,  #7d4999,  #e2acff);
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,7 +23,7 @@ body {
 }
 
 #card {
-    background-color: #e2acff;
+    background-color: transparent;
     color: white;
     text-align: center;
     border-radius: 20px;
@@ -44,7 +44,7 @@ body {
 
 
 #header {
-    background-color: #e2acff;
+    background-color: transparent;
     height: 125px;
 
     border-top-left-radius: 20px;
@@ -80,6 +80,10 @@ body {
     }
 }
 
+#av:hover {
+    border-radius: 25%;
+    transition: 3s;
+}
 
 #pf { /* lia#1000 */
     font-family: 'Baloo 2', cursive;
