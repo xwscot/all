@@ -2,30 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body, html {
-    font-family: Arial, Helvetica, sans-serif;
+body {
     background-color: #000;
     color: white;
-
-    height: 100vh;
+    font-family: 'Baloo 2', cursive;
 }
 
 header > h1 {
-    color: white;
     text-align: center;
-    padding-top: 20px;
-
-    animation: float 3s ease-in-out infinite;
-}
-
-header > h1 > a {
-    text-decoration: none;
-    color: white;
+    animation: float 1.7s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -40,79 +25,78 @@ header > h1 > a {
     }
 }
 
-#bg {
-    background-color: #000;
+.holder1 {
+    display: flex;
+    justify-content: center;
 
-    width: 300px;
-    height: 600px;
-
-    margin: auto;
-    padding: 20px;
-
-    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.card {
-    padding: 20px;
+.holder2 {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.holder3 {
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.imagem {
+    width: 200px;
+    height: 130px;
+    margin: 10px;
+    position: relative;
     text-align: center;
 }
 
-.icons {
-    width: 70px;
+.imagem::after {
+  content: attr(data-title); 
+  font-size: 1.2em;
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
+
+.imagem:hover {
+    font-size: 1.3em;
+    font-weight: bolder;
+    transition: 1s;
+}
+
+.wd {
+    width: 50%;
     border-radius: 50%;
     padding: 5px;
     background-size: 200px;
 
-    background-image: linear-gradient(130deg, #000000, #fffdfd3a);
+    background-image: linear-gradient(130deg, #000000, #ffffff4e);
     transform: translateY(0px);
     animation: animated-gradient 2s linear infinite;
-
 }
 
 @keyframes animated-gradient {
     25% {
         background-position: left, bottom;
     }
-
+    
     50% {
         background-position: right, bottom;
     }
-
+    
     75% {
         background-position: right, top;
     }
-
+    
     100% {
         background-position: left, top;
     }
-}
-
-.icons:hover {
-    border-radius: 25%;
-    width: 50%;
-    transition: 2s;
-}
-
-
-.users > p {
-    padding: 5px;
-    font-family: 'Baloo 2', cursive;
-
-    transform: translatey(0px);
-}
-
-p:hover {
-    font-size: 1.2em;
-    transition: 2s;
-}
-
-.users > a {
-    color: white;
-    font-family: 'Baloo 2', cursive;;
-    text-decoration: none;
-}
-
-hr {
-    margin-left: 70px;
-    margin-right: 70px;
-}
+}   
