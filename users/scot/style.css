@@ -14,7 +14,7 @@ body {
 
 #bgcontainer {
     position: relative;
-    background-color: #e2acff;
+    background-color: black;
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -23,7 +23,7 @@ body {
 }
 
 #card {
-    background-color: #e2acff;
+    background-color: black;
     color: white;
     text-align: center;
     border-radius: 20px;
@@ -44,7 +44,7 @@ body {
 
 
 #header {
-    background-color: #e2acff;
+    background-color: black;
     height: 125px;
 
     border-top-left-radius: 20px;
@@ -81,7 +81,7 @@ body {
 }
 
 
-#pf { /* lia#1000 */
+#pf { /* all#1000 */
     font-family: 'Baloo 2', cursive;
     font-size: 1.3em;
     
@@ -108,8 +108,8 @@ body {
 
 #socials {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .soc {
@@ -137,7 +137,7 @@ body {
 
 .soc:hover {
     filter: none;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .img {
@@ -148,7 +148,7 @@ body {
     color: white;
     filter: invert(100%);
     width: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     transform:  rotate(180deg);
 }
 
