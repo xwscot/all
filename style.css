@@ -89,9 +89,10 @@ header > h1 > a {
 
 .icons:hover {
     border-radius: 25%;
-    width: 30%;
+    width: 50%;
     transition: 2s;
 }
+
 
 .users > p {
     padding: 5px;
